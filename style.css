@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root{
+	--color-withe1: #FFFFFF;
+	--color-purple: #7C3AED;
+	--color-grey200: #E2E8F0;
+	--color-grey400: #94A3B8;
+	--color-grey600: #475569;
+	--color-grey800: #1E293B;
+	--color-red: #ED3A5A;
+}
+ 
+*{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: 'Titillium Web';
+}
+
+body{
+	height: 900px;
+}
+
+.logo{
+	width: 159.5px;
+	height: 54px;
+	padding: 40px 112px;
+}
+
+.first-section{
+	width: 384px;
+	height: 483px;
+	left: 112px;
+	position: absolute;
+}
+
+/*Títulos e textos*/
+.content-text{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0;
+	height: 119px;
+	margin-bottom: 30px;
+}
+
+.content-text h1{
+	width: 316px;
+	height: 55px;
+	line-height: 55px;
+	font-weight: 700;
+	size: 36px;
+	color: var(--color-grey800);
+	font-style: normal;
+}
+
+.content-text p{
+	width: 351px;
+	height: 48px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--color-grey600);
+}
+
+/*Formulário*/
+.form-login{
+	width: 384px;
+	height: 324px;
+}
+
+.form-login form{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.form-login form label{
+	width: 40px;
+	height: 21px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	font-style: normal;
+}
+
+.form-login form input{
+	width: 300px;
+	height: 53px;
+	border-radius: 4px;
+	color: var(--color-grey600);
+	outline: none;
+	background: var(--color-withe1);
+	border: 1px solid var(--color-grey200);
+	padding: 0 12px;
+}
+
+.form-login form .span-required{
+	color: var(--color-red);
+	width: 136px;
+	height: 21px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	display: none;
+}
+
+.form-login form .senha .span-senha a:link{
+	width: 113px;
+	height: 21px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	color: var(--color-purple);
+	text-decoration: none;
+	margin-left: 170px;
+}
+
+.form-login form .login-btn{
+	width: 325px;
+	height: 56px;
+	border-radius: 4px;
+	background-color: var(--color-purple);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	cursor: pointer;
+}
+
+.form-login form .login-btn .btn-span{
+	width: 44px;
+	height: 24px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--color-withe1);
+}
+
+.form-login form .inscreva-se{
+	width: 263px;
+	height: 24px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	font-style: normal;
+	color: var(--color-grey600);
+}
+
+.form-login form .inscreva-se a:link{
+	text-decoration: none;
+	color: var(--color-purple);
+}
+
+.form-login form .inscreva-se a:visited{
+	text-decoration: none;
+	color: var(--color-purple);
+}
+
+/*Imagem*/
+
+.img{
+	width: 763px;
+	height: 900px;
+	margin-left: 604px;
+	margin-top: -200px;
+	mix-blend-mode: screen;
+	position: absolute;
+}
+
+@media(max-width:600px){
+	body{
+		overflow: hidden;
+	}
+
+	.content-text{
+		display: none;
+	}
+
+	.form-login{
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.img{
+		display: none;
+	}
+}

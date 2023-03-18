@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Desafio Bora Codar 11</title>
+</head>
+<body>
+	<main class="content">
+		<img src="logo.png" alt="Logo da página, o que está escrito é: Vertigo" class="logo">
+
+	<section class="first-section">
+		<div class="content-text">
+			<h1>Acesse a plataforma</h1>
+
+			<p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
+		</div>
+
+		<div class="form-login">
+		<form id="form">
+			<div class="email">
+				<label>E-mail</label> <br>
+				<input type="email" name="email" class="inputs required" id="email-required" placeholder="digite seu e-mail" oninput="emailValidate()">
+				<span class="span-required">Digite um e-mail válido!</span>
+			</div>
+			<div class="senha">
+				<label for="password">Senha</label>
+				<span class="span-senha"><a href="#">Esqueceu a senha?</a></span> <br>
+				<input type="password" name="password" class="inputs required" id="password-required" placeholder="digite sua senha" oninput="passwordValidator()">
+				
+				<span class="span-required">Digite uma senha válida</span>
+			</div>
+			<button type="submit" class="login-btn" id="login-btn"> <a href="#"><span class="btn-span">Entrar</span></a></button>
+			<span class="inscreva-se">Ainda não tem conta? <a href="#">Inscreva-se</a></span>
+		</form>
+	</section>
+	</main>
+	<img src="img.png" alt="imagem ilustrativa nos tons de roxo" class="img">
+</body>
+<script src="app.js"></script>
+</html>
